@@ -56,3 +56,15 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+ul.article-tag {
+  list-style-type: none;
+}
+
+li.article-tag {
+  display: inline-block;
+  margin: 0 0 0 4px;
+  background-color: rgb(222, 255, 244);
+  color: rgb(28, 119, 89);
+  border-radius: 2px;
+}

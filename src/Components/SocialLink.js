@@ -1,12 +1,12 @@
 function SocialLink(props) {
-  const { logo, alt } = props;
-  // if (logo) {
-  //   ;
-  // } // logo exists => image; if not => alt text
+  const { logo, alt, href } = props;
+  const size = 16;
 
   return (
     <>
-      <img src={logo} alt={alt} />
+      <a href={href}>
+        <img src={`${logo}`} alt={`${alt}`} width={size} height={size} />
+      </a>
     </>
   );
 }

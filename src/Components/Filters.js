@@ -1,16 +1,18 @@
-const Filters = ({ filters }) => {
+const Filters = ({ filters, onChange }) => {
   const uniqueFilters = [...new Set(filters)];
 
   return (
     <>
-      <label htmlFor="filters">Filters</label>
-      <select name="filters" id="filters" multiple>
+      <label htmlFor="filter">Filters: </label>
+      <select name="filter" onChange={onChange} defaultValue="">
+        <option value="">---</option>
         {
-          uniqueFilters.map((filter) => (
+          uniqueFilters.sort().map((filter) => (
             <option value={filter} key={filter}>{filter}</option>
           ))
         }
       </select>
+
     </>
   );
 }

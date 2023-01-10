@@ -1,17 +1,18 @@
-import Link from "./Link";
 import Title from "./Title";
 import Socials from "./Socials";
+
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="navbar">
-      <Link href="/">
+      <Link to="/">
         <Title order={1}>Guy Luong</Title>
       </Link>
       <div className="links">
-        <Link href="/creations">Creations</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/contact">Contact</Link>
+        <Link to="/creations">Creations</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
         <Socials />
       </div>
     </nav >
