@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+```bash
+// Open two different terminals
+// On one terminal
+$.1 > npx json-server --watch data/db.json --port 8000
+
+// On the other
+$.2 > npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -63,5 +63,19 @@
       "date": "1/5/2021",
       "id": 6
     }
+  ],
+  "socials": [
+    {
+      "id": 1,
+      "name": "Instagram",
+      "imagePath": "/assets/instagram.png",
+      "to": "https://instagram.com/firisthetraveller"
+    },
+    {
+      "id": 2,
+      "name": "Linkedin",
+      "imagePath": "/assets/linkedin.png",
+      "to": "https://linkedin.com/gluong7"
+    }
   ]
 }

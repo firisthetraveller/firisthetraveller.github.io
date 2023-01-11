@@ -3,9 +3,9 @@ import Filters from '../Components/Filters';
 import ItemList from '../Components/ItemList';
 import useFetch from '../Components/useFetch';
 
-const Creations = () => {
+const Creations = ({ defaultFilter }) => {
   const { data: items, isPending, error } = useFetch("http://localhost:8000/articles");
-  const [filterName, setFilterName] = useState('');
+  const [filterName, setFilterName] = useState((defaultFilter) ? defaultFilter : "");
 
   // For selected options :
   // https://www.pluralsight.com/guides/how-to-get-selected-value-from-a-mapped-select-input-in-react
@@ -15,7 +15,7 @@ const Creations = () => {
   }
 
   return (
-    <div className="content">
+    <>
       {items &&
         <>
           <Filters filters={items.map((item) => (item.tags)).flat()} onChange={handleChange} />
@@ -24,7 +24,7 @@ const Creations = () => {
       }
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
-    </div>
+    </>
   );
 }
 
