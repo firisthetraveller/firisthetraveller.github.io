@@ -1,5 +1,5 @@
 import SocialLink from "./SocialLink";
-import useFetch from "./useFetch";
+import useFetch from "../Hooks/useFetch";
 
 function Socials() {
   const { data: socials, error } = useFetch("http://localhost:8000/socials");

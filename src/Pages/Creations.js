@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Filters from '../Components/Filters';
 import ItemList from '../Components/ItemList';
-import useFetch from '../Components/useFetch';
+import useFetch from '../Hooks/useFetch';
 
 const Creations = ({ defaultFilter }) => {
   const { data: items, isPending, error } = useFetch("http://localhost:8000/articles");
