@@ -58,10 +58,36 @@
       "description": "Application d'entraînement au dessin par référence",
       "tags": [
         "Projet",
-        "Programmation"
+        "Programmation",
+        "Python"
       ],
       "date": "1/5/2021",
       "id": 6
+    },
+    {
+      "title": "NotOpenGL",
+      "description": "Une simulation de boids faite en C++ et OpenGL.",
+      "date": "10/02/2023",
+      "tags": [
+        "Programmation",
+        "Projet",
+        "C++",
+        "OpenGL"
+      ],
+      "id": 7
+    },
+    {
+      "title": "KanjiOverdose",
+      "description": "A website using the Wanikani API to list all the available kanjis.",
+      "date": "07/02/2023",
+      "tags": [
+        "Programmation",
+        " VueJS",
+        " Javascript",
+        " API",
+        " Projet"
+      ],
+      "id": 8
     }
   ],
   "socials": [
@@ -76,6 +102,18 @@
       "name": "Linkedin",
       "imagePath": "/assets/linkedin.png",
       "to": "https://linkedin.com/gluong7"
+    },
+    {
+      "id": 3,
+      "name": "GitHub",
+      "imagePath": "/assets/github.png",
+      "to": "https://github.com/firisthetraveller"
+    },
+    {
+      "id": 4,
+      "name": "Mail",
+      "imagePath": "/assets/mail.png",
+      "to": "mailto:firisthetraveller@gmail.com"
     }
   ]
 }
