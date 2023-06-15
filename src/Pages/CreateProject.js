@@ -13,7 +13,7 @@ const CreateProject = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const tags = tag.split(",");
-    tags.forEach((s) => s.trim());
+    tags.map(s => s.trim());
     const project = { title, description, date, tags };
 
     setIsPending(true);
