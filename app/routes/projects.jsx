@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { localeText } from "../helpers/lang";
 import useCollection from "../hooks/useCollection";
 
@@ -7,13 +8,15 @@ const Projects = () => {
     return !isPending && (
         <main className="projects">
             {data && data.map((p, i) => (
-                <div key={i} className="parent">
-                    <div className="child">
-                        <h3>{localeText(p.title)}</h3>
-                        <p>{localeText(p.description)}</p>
+                <Link key={i} to={`/projects/${p.id}`}>
+                    <div className="parent">
+                        <div className="child">
+                            <h3>{localeText(p.title)}</h3>
+                            <p>{localeText(p.description)}</p>
+                        </div>
+                        {p.images ? <img src={p.images[0]} /> : <p>No image available</p>}
                     </div>
-                    {p.images ? <img src={p.images[0]} /> : <p>No image available</p>}
-                </div>
+                </Link>
             ))}
         </main>
     );
