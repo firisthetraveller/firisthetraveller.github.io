@@ -35,22 +35,27 @@ h3 {
 }
 
 main {
-  @apply max-w-5xl my-12 mx-auto px-8;
+  @apply max-w-5xl my-12 mx-auto px-4;
 }
 
 .projects {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-2;
 }
 
 .projects .parent {
-  @apply flex gap-4;
+  @apply flex p-4 gap-4;
 }
 
-.projects .parent:nth-child(odd) {
+.projects a:hover {
+  @apply dark:bg-slate-900 rounded transition-colors duration-300 ease-in-out;
+  box-shadow: inset 0px 0px 40px 40px #030712;
+}
+
+.projects a:nth-child(odd) .parent {
   @apply flex-row;
 }
 
-.projects .parent:nth-child(even) {
+.projects a:nth-child(even) .parent {
   @apply flex-row-reverse;
 }
 

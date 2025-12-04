@@ -11,6 +11,11 @@ import type { Route } from "./+types/root";
 import "./app.css";
 
 import Header from "./components/Header";
+import LoadingScreen from "./components/LoadingScreen";
+
+export function HydrateFallback() {
+  return <LoadingScreen />;
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
