@@ -42,8 +42,12 @@ main {
   @apply flex flex-col gap-2;
 }
 
-.projects .parent {
+.projects a .parent {
   @apply flex p-4 gap-4;
+
+  .child {
+    @apply flex flex-col max-w-1/3;
+  }
 }
 
 .projects a:hover {
@@ -53,24 +57,20 @@ main {
 
 .projects a:nth-child(odd) .parent {
   @apply flex-row;
+
+  .child {
+    @apply text-right;
+  }
 }
 
 .projects a:nth-child(even) .parent {
   @apply flex-row-reverse;
+
+  .child {
+    @apply text-left;
+  }
 }
 
 .projects .parent img {
   @apply rounded-xl;
-}
-
-.projects .parent .child {
-  @apply flex flex-col max-w-1/3;
-}
-
-.projects .parent:nth-child(odd) .child {
-  @apply text-right;
-}
-
-.projects .parent:nth-child(even) .child {
-  @apply text-left;
 }
